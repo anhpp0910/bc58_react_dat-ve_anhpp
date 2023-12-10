@@ -1,0 +1,97 @@
+header {
+  background-color: rgb(216, 45, 139);
+  font-size: 20px;
+  padding: 25px 0;
+}
+
+.screen {
+  background-color: rgb(38, 38, 38);
+}
+
+.screen .manHinh {
+  position: relative;
+}
+
+.screen .manHinh::before {
+  content: "";
+  width: 300px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 30px;
+  transform: translateX(-36%);
+}
+
+.seat_map .seat {
+  background-color: rgb(245, 34, 45);
+  border: 0.125rem solid transparent;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.375rem;
+  margin: 5px;
+  padding: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.seat_map .seat:hover {
+  background-color: rgb(245, 34, 45, 0.7);
+}
+
+.seat_map .seat.gheDaDat {
+  background-color: rgb(64, 64, 64);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.seat_map .seat.gheBanChon {
+  background-color: rgb(216, 45, 139);
+  border: 0.125rem solid #fff;
+}
+
+.seat_guide {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.seat_guide span {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.seat_guide .seat {
+  background-color: rgb(245, 34, 45);
+  border: 0.125rem solid transparent;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.375rem;
+  margin: 4px;
+  padding: 0;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.seat_guide .seat.gheDaDat {
+  background-color: rgb(64, 64, 64);
+}
+
+.seat_guide .seat.gheBanChon {
+  background-color: rgb(216, 45, 139);
+  border: 0.125rem solid #fff;
+}
+
+.muaVe {
+  padding: 10px 24px;
+  background-color: rgb(216, 45, 139);
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 0.375rem;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.muaVe:hover {
+  background-color: rgb(216, 45, 139, 0.8);
+}
